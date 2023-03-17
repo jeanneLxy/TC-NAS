@@ -1,0 +1,38 @@
+
+
+PHASE 0 :
+Router 1 :
+conf ter
+router ospf 111
+router-id 111.111.111.111
+exit
+interface GigabitEthernet 0/0
+ip address 10.10.10.1 255.255.255.252
+no shutdown
+ip ospf 111 area 0
+exit
+interface loopback 0
+ip address 111.111.111.111 255.255.255.255
+no shutdown
+ip ospf 111 area 0
+exit
+
+
+PHASE 0 et PHASE 1 :
+Router 1 :
+conf ter
+router ospf 111
+router-id 111.111.111.111
+exit
+interface GigabitEthernet 0/0
+ip address 10.10.10.1 255.255.255.252
+no shutdown
+ip ospf 111 area 0
+mpls ip
+exit
+interface loopback 0
+ip address 111.111.111.111 255.255.255.255
+no shutdown
+ip ospf 111 area 0
+exit
+
