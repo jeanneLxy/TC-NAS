@@ -16,54 +16,54 @@ Valider le routage et le forwarding (show ip route et pings)
 
 ## Phase 1 : core MPLS routing
 
-###Partie A :
+#### Partie A :
 Activer LDP sur les interfaces (juste 2 lignes à rajouter)
 Valider LDP : MPLS bien transporté + penultimatum popping
 
-###Partie B : automatisation
+#### Partie B : automatisation
 Addressage, OSPF et LDP
 
 
 ## Phase 2 : core BGP/MPLS routing
 
-###Partie A : documentation
+#### Partie A : documentation
 Chercher sur google “Cisco IOS Basic BGP/MPLS VPN” 
 attention ils utilisent un route reflector au lieu de full mesh
 attention ils utilisent IS-IS au lieu de OSPF	
 
-###Partie B : configuration
+#### Partie B : configuration
 configurer iBGP for VPNv4 address family
 loopback to loopback iBGP
 
-###Partie C : automatisation
+#### Partie C : automatisation
 Addressage, OSPF, MPLS, BGP/MPLS
 
 
 
-##Phase 3 : ajout de clients
+## Phase 3 : ajout de clients
 
-###Partie A :
+#### Partie A :
 Ajouter 4 routeurs CE (pour 2 clients de chaque côté)
 configurer VRF
 et route target
 
-###Partie B :
+#### Partie B :
 Configurer eBGP entre PE-CE :
 - Normal BGP sur le CE
 - Normal BGP dans le VRF sur le PE
 Validation routage
 
-###Partie C : automatiser
+#### Partie C : automatiser
 configuration automatique VRF
 
-##Phase 4 : “aller plus loin”
+## Phase 4 : “aller plus loin”
 
-###Partie A : manageability
+#### Partie A : manageability
 Se souvenir ce qu’on a configuré sur le réseau
 Pouvoir changer le json et un effet direct sans : routeur reload, cfg wipe ni config ghosting
 Pouvoir add, delete, update
 
-###Partie B : plus de services
+#### Partie B : plus de services
 Faire que les clients puisse dialoguer comme ils veulent entre clients et sites
 Ajouter services Internet : VPN et internet normal PAR CONTRE ISOLÉS 
 Traffic engineering entrant, faire que les clients puisse choisir par où le traffic doit passer
