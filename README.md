@@ -74,14 +74,9 @@ Ajouter RSVP
 ## Convention retenue pour le nommage
 Exemple pour un réseau 10.10.10.??/24
 
-Routeur 1 :
+10.10.10.0/24
+10.10.10.0/30 caractérise 1 lien entre 2 routeurs
 10.10.10.0/30 network
-10.10.10.1/30 interface 0
-10.10.10.2/30 interface 1
-10.10.10.3/30 broadcast
-
-Routeur 2 :
-10.10.10.4/30 network
-10.10.10.5/30 interface 0
-10.10.10.6/30 interface 1
-10.10.10.7/30 broadcast
+              .1/30 routeur 1
+              .2/30 routeur 2
+              .3/30 broadcast
