@@ -79,6 +79,6 @@ Exemple pour un réseau 10.10.10.??/24
 => 10.10.10.0/30 caractérise 1 lien entre 2 routeurs
 
 10.10.10.0/30 network
-10.10.10.1/30 routeur 1
-10.10.10.2/30 routeur 2
-10.10.10.3/30 broadcast
+10.10.10.1/30 routeur 1 \n
+10.10.10.2/30 routeur 2 \n
+10.10.10.3/30 broadcast \n
