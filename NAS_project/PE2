@@ -1,0 +1,44 @@
+conf t
+int f0/0
+ip add 10.10.10.10 255.255.255.252
+no shutdown
+end
+
+conf t
+int g1/0
+ip add 192.168.2.1 255.255.255.0
+no shutdown
+end
+
+conf t
+int g2/0
+ip add 192.168.4.1 255.255.255.0
+no shutdown
+end
+
+conf t
+int loopback0
+ip add 112.112.112.112 255.255.255.255
+no shut
+end
+
+conf t
+router ospf 1
+network 112.112.112.0 0.0.0.255 area 0
+network 10.10.10.8 0.0.0.3 area 0 
+end
+conf t
+int f0/0
+mpls ip
+end
+
+conf t
+router bgp 200
+neighbor 111.111.111.111 remote-as 200
+neighbor 111.111.111.111 update-source loopback0
+no bgp default ipv4-unicast
+address-family vpnv4
+neighbor 111.111.111.111 activate
+neighbor 111.111.111.111 send-community extended
+exit-address-family
+end

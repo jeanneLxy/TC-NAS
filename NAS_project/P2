@@ -1,0 +1,33 @@
+conf t
+int f0/0
+ip add 10.10.10.9 255.255.255.252
+no shutdown
+end
+
+conf t
+int g1/0
+ip add 10.10.10.6 255.255.255.252
+no shutdown
+end
+
+conf t
+int loopback0
+ip add 12.12.12.12 255.255.255.255
+no shut
+end
+
+conf t
+router ospf 1
+network 12.12.12.0 0.0.0.255 area 0
+network 10.10.10.8 0.0.0.3 area 0 
+network 10.10.10.4 0.0.0.3 area 0 
+end
+
+conf t
+int f0/0
+mpls ip
+end
+conf t
+int g1/0
+mpls ip
+end
