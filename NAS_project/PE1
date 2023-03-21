@@ -1,5 +1,5 @@
 conf t
-int f0/0
+int g0/0
 ip add 10.10.10.1 255.255.255.252
 no shutdown
 end
@@ -25,11 +25,11 @@ end
 conf t
 router ospf 1
 network 111.111.111.0 0.0.0.255 area 0
-network 10.10. iBG10.0 0.0.0.3 area 0 
+network 10.10.10.0 0.0.0.3 area 0 
 end
 
 conf t
-int f0/0
+int g0/0
 mpls ip
 end
 

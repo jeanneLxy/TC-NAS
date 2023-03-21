@@ -1,5 +1,5 @@
 conf t
-int f0/0
+int g0/0
 ip add 10.10.10.10 255.255.255.252
 no shutdown
 end
@@ -28,7 +28,7 @@ network 112.112.112.0 0.0.0.255 area 0
 network 10.10.10.8 0.0.0.3 area 0 
 end
 conf t
-int f0/0
+int g0/0
 mpls ip
 end
 
