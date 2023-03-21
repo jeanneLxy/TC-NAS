@@ -1,0 +1,529 @@
+{
+    "routers": [
+        {
+            "name": "1",
+            "router_id": "1.1.1.1",
+            "AS":"7",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"1::1",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0",
+                    "AS":"7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0"
+                },
+                {
+                    "name": "GigabitEthernet3/0"
+                }
+            ]
+        },
+        {
+            "name": "2",
+            "router_id": "2.2.2.2",
+            "AS":"7",
+            "interfaces": [
+           	 {
+                    "name": "Loopback0",
+                    "address":"2::2",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet1/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0"
+                }
+            ]
+        },
+        {
+            "name": "3",
+            "router_id": "3.3.3.3",
+            "AS":"7",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"3::3",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0",
+                    "AS":"7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0"
+                }
+            ]
+        },
+        {
+            "name": "4",
+            "router_id": "4.4.4.4",
+            "AS":"7",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"4::4",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0",
+                    "AS":"7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0",
+                    "AS":"7",
+                    "RIP":"1"
+                }
+            ]
+        },
+        {
+            "name": "5",
+            "router_id": "5.5.5.5",
+            "AS":"7",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"5::5",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0",
+                    "AS":"7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0", 
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0", 
+                    "AS":"7",
+                    "RIP":"1"
+                }
+            ]
+        },
+        {
+            "name": "6",
+            "router_id": "6.6.6.6",
+            "EBGP":"11",
+            "EBGPinter":"GigabitEthernet2/0",
+            "AS":"7",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"6::6",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                    "AS":"7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0", 
+                    "AS":"7"
+        
+                },
+                {
+                    "name": "GigabitEthernet3/0"    
+                }
+            ]
+        },
+        {
+            "name": "7",
+            "router_id": "7.7.7.7",
+            "EBGP":"14",
+            "EBGPinter":"GigabitEthernet2/0",
+            "AS":"7",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"7::7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                    "AS":"7",
+                    "RIP":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"7",
+                    "RIP":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",
+                    "AS":"7"
+                },
+                {
+                    "name": "GigabitEthernet3/0"
+                }
+            ]
+        },
+        {
+            "name": "8",
+            "router_id": "8.8.8.8",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"8::8",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0" 
+                     
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                     "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",  
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0"  
+                }
+            ]
+        },
+        {
+            "name": "9",
+            "router_id": "9.9.9.9",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"9::9",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                     "AS":"14",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0",
+                     "AS":"14", 
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",
+                     "AS":"14",
+                    "OSPF":"1"  
+                },
+                {
+                    "name": "GigabitEthernet3/0" 
+                }
+            ]
+        },
+        {
+            "name": "10",
+            "router_id": "10.10.10.10",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"10::10",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                     "AS":"14",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                     "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",  
+                     "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0",
+                     "AS":"14",
+                    "OSPF":"1"  
+                }
+            ]
+        },
+        {
+            "name": "11",
+            "router_id": "11.11.11.11",
+            "EBGP":"6",
+            "EBGPinter":"FastEthernet0/0",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"11::11",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                    "AS":"14"
+                 
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",  
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0"  
+                }
+            ]
+        },
+        {
+            "name": "12",
+            "router_id": "12.12.12.12",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"12::12",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                    "AS":"14",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",  
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0",  
+                    "AS":"14",
+                    "OSPF":"1"
+                }
+            ]
+        },
+        {
+            "name": "13",
+            "router_id": "13.13.13.13",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"13::13",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                    "AS":"14",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet2/0",  
+                    "AS":"14",
+                    "OSPF":"1"
+                },
+                {
+                    "name": "GigabitEthernet3/0"
+                }
+            ]
+        },
+        {
+            "name": "14",
+            "router_id": "14.14.14.14",
+            "EBGP":"7",
+            "EBGPinter":"GigabitEthernet1/0",
+            "AS":"14",
+            "interfaces": [
+            	{
+                    "name": "Loopback0",
+                    "address":"14::14",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "FastEthernet0/0", 
+                    "AS":"14",
+                    "OSPF":"1"
+		},
+                {
+                    "name": "GigabitEthernet1/0", 
+                    "AS":"14"
+                },
+                {
+                    "name": "GigabitEthernet2/0"
+                },
+                {
+                    "name": "GigabitEthernet3/0",  
+                    "AS":"14",
+                    "OSPF":"1"
+                }
+            ]
+        }
+    ],
+    
+     
+    "links": [
+        {
+            "1":{"FastEthernet0/0":""},
+            "2":{"FastEthernet0/0":""}
+        },
+        {
+            "1": {"GigabitEthernet1/0":""},
+            "3": {"FastEthernet0/0":""}
+        },
+        {
+            "2": {"GigabitEthernet2/0":""},
+            "3": {"GigabitEthernet2/0":""}
+        },
+        {
+            "2":{"GigabitEthernet1/0":""},
+            "4":{"FastEthernet0/0":""}
+        },
+        {
+            "3": {"GigabitEthernet1/0":""},
+            "5": {"FastEthernet0/0":""}
+        },
+        {
+            "4": {"GigabitEthernet1/0":""},
+            "5": {"GigabitEthernet1/0":""}
+        },
+        {
+            "4": {"GigabitEthernet2/0":""},
+            "6": {"FastEthernet0/0":""}
+        },
+        {
+            "7": {"GigabitEthernet1/0":""},
+            "4": {"GigabitEthernet3/0":""}
+        },
+        {
+            "6": {"GigabitEthernet1/0":""},
+            "5": {"GigabitEthernet3/0":""}
+        },
+        {
+            "5": {"GigabitEthernet2/0":""},
+            "7": {"FastEthernet0/0":""}
+        },
+        {
+            "6": {"GigabitEthernet2/0":""},
+            "11": {"FastEthernet0/0":""}
+        },
+        {
+            "7": {"GigabitEthernet2/0":""},
+            "14": {"GigabitEthernet1/0":""}
+        },
+        {
+            "11": {"GigabitEthernet1/0":""},
+            "10": {"GigabitEthernet1/0":""}
+        },
+        {
+            "10": {"GigabitEthernet2/0":""},
+            "9": {"GigabitEthernet2/0":""}
+        },
+        {
+            "10": {"FastEthernet0/0":""},
+            "12": {"FastEthernet0/0":""}
+        },
+        {
+            "14": {"GigabitEthernet3/0":""},
+            "10": {"GigabitEthernet3/0":""}
+        },
+        {
+            "9": {"FastEthernet0/0":""},
+            "13": {"FastEthernet0/0":""}
+        },
+        {
+            "8": {"GigabitEthernet1/0":""},
+            "9": {"GigabitEthernet1/0":""}
+        },
+        {
+            "13": {"GigabitEthernet2/0":""},
+            "8": {"GigabitEthernet2/0":""}
+        },
+        {
+            "12": {"GigabitEthernet1/0":""},
+            "13": {"GigabitEthernet1/0":""}
+        },
+        {
+            "14": {"FastEthernet0/0":""},
+            "12": {"GigabitEthernet3/0":""}
+        },
+        {
+            "11": {"GigabitEthernet2/0":""},
+            "12": {"GigabitEthernet2/0":""}
+        }
+    ]
+
+    
+}
